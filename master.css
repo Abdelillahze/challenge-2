@@ -1,0 +1,74 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.container .card {
+    flex-basis: 33%;
+    padding: 50px;
+}
+
+.container .one {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container .two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container .three {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container .card h2 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.container .card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container button {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: normal;
+}
+
+.container .one button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container .two button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container .three button {
+    color: hsl(179, 100%, 13%);
+}
